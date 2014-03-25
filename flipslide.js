@@ -1,3 +1,12 @@
+/*
+Plugin Name: Flip Slider
+Dependency: JavaScript, CSS 3.0
+Complete Reference on: https://github.com/ashishanexpert/Flip-Slider/
+
+Developer: Ashish Kumar
+Website: http://AshishKumar.asia
+*/
+
 function flipSlider(options) {
     // Private Vars
     var container = options.container,
