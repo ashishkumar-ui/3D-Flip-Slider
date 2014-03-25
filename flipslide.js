@@ -39,11 +39,12 @@ function flipSlider(options) {
 
             timeout = setTimeout(function() {
                 resetSlides();
+                clearTimeout(timeout);
             }, 600);
         }
     }
 
-    // reset slies on completion
+    // reset slides on completion
     function resetSlides() {
         frontSlide = slider.querySelector(".front");
         backSlide = slider.querySelector(".back");
