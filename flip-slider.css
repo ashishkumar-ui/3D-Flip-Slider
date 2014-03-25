@@ -7,7 +7,7 @@
 	border-radius: 10px;
 	height: 300px;
 	margin: 20px auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 500px;
 	-webkit-perspective: 1000px;
 }
@@ -30,7 +30,7 @@
 	height: 300px;
 	position: absolute;
 	top: 0;
-	left: -500px;
+	left: -999em;
 	width: 100%;
 }
 
