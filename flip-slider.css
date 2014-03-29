@@ -2,6 +2,12 @@
 	margin:0;
 }
 
+body{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
+}
+
 .flip-frame{
 	border: 10px solid #CCC;
 	border-radius: 10px;
@@ -13,13 +19,6 @@
 	-moz-perspective: 1000px;
 	-ms-perspective: 1000px;
 	perspective: 1000px;
-}
-
-.flip-frame .flip{
-	position: relative;	
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
 }
 
 .flip-frame .flip.animate{
