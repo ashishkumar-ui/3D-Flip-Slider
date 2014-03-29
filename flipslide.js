@@ -7,7 +7,7 @@ Developer: Ashish Kumar
 Website: http://AshishKumar.asia
 */
 
-function flipSlider(options) {
+function FlipSlider(options) {
     // Private Vars
     var container = options.container,
         slider = container.querySelector(".flip"),
@@ -23,12 +23,12 @@ function flipSlider(options) {
     //Next flip
     this.nextFlip = function() {
         doFlip(1);
-    }
+    };
 
     //previous flip
     this.prevFlip = function() {
         doFlip(-1);
-    }
+    };
 
     // == private functions == //
 
@@ -78,7 +78,7 @@ function flipSlider(options) {
             if (slides[i].classList.contains("front")) {
                 frontIndex = i;
             }
-        };
+        }
 
         if (dir == -1) {
             target = frontIndex < 1 ? slides[slideCount - 1] : slides[frontIndex - 1];
@@ -95,6 +95,6 @@ function flipSlider(options) {
 }
 
 // Creating Instance of the slider
-var flip1 = new flipSlider({
+var flip1 = new FlipSlider({
     container: document.querySelector(".flip-slider")
 });
