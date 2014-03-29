@@ -1,5 +1,11 @@
 #Flip Slider Release Note:
 
+###Version 1.0.2
+Date : March 29, 2014
+
+######Release Note:
+- JsHint Issues Fixes
+
 ###Version 1.0.1
 Date : March 25, 2014
 
