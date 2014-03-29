@@ -44,7 +44,7 @@
 <ul>
 <li>Stylish Flip Animation</li>
 <li>Pure JavaScript, no jQuery or any other JS library used</li>
-<li>Very light file size. (3kb uncompressed version JS)</li>
+<li>Very light file size. (2.5kb uncompressed version JS)</li>
 <li>Supports Images and HTML contents both</li>
 <li>Highly Customizable</li>
 <li>Readable CSS and JS, well commented so that you can make your changes as per your requirements</li>
@@ -53,9 +53,41 @@
 
 <p>Set up your HTML markup as example and create an instance of the plugin class.</p>
 
-<p><code>var myFlip = new flipSlider({
+<pre><code>var flip1 = new FlipSlider({
     container: document.querySelector(".flip-slider")
-});</code></p>
+});
+
+var flip2 = new FlipSlider({
+    container: document.getElementById("#flipSlider2")
+});
+</code></pre>
+
+<h4>
+<a name="how-to-trigger-events-from-outside-elements" class="anchor" href="#how-to-trigger-events-from-outside-elements"><span class="octicon octicon-link"></span></a>How to trigger Events from Outside Elements</h4>
+
+<h5>
+<a name="method-1-bind-event-on-elements" class="anchor" href="#method-1-bind-event-on-elements"><span class="octicon octicon-link"></span></a>Method 1: Bind Event on Elements</h5>
+
+<p></p><pre><code>// Binding Previous Event
+document.querySelector("#flipPrevious").onclick = flip1.prevFlip;
+
+<p>// Binding Next Event
+document.querySelector("#flipNext").onclick = flip1.nextFlip;
+</p></code></pre>
+
+<h5>
+<a name="method-2-trigger-somewhere-from-script" class="anchor" href="#method-2-trigger-somewhere-from-script"><span class="octicon octicon-link"></span></a>Method 2: Trigger somewhere from script</h5>
+
+<p></p><pre><code>flip1.prevFlip(); // Trigger Previous Event
+flip1.nextFlip(); // Trigger Next Event
+</code></pre>
+
+<h5>
+<a name="method-3-bind-events-inline-to-the-elements" class="anchor" href="#method-3-bind-events-inline-to-the-elements"><span class="octicon octicon-link"></span></a>Method 3: Bind Events inline to the elements</h5>
+
+<p></p><pre><code>&lt;p&gt;&lt;b onclick="flip1.prevFlip();"&gt;Click here&lt;/b&gt; to flip Previous the slider&lt;/p&gt;
+&lt;p&gt;&lt;b onclick="flip1.nextFlip();"&gt;Click here&lt;/b&gt; to flip next the slider&lt;/p&gt;
+</code></pre>
 
 <h3>
 <a name="have-suggestions" class="anchor" href="#have-suggestions"><span class="octicon octicon-link"></span></a>Have Suggestions?</h3>
