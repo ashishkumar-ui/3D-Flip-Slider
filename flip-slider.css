@@ -21,6 +21,13 @@ body{
 	perspective: 1000px;
 }
 
+.flip-frame .flip{
+	position: relative;	
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+}
+
 .flip-frame .flip.animate{
 	-webkit-transition: 0.6s;
 	-moz-transition: 0.6s;
