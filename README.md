@@ -1,4 +1,4 @@
-3D Flip-Slider
+3D Flip Slider
 ===========
 
 ![Alt text](http://oi58.tinypic.com/wcbwnb.jpg)
