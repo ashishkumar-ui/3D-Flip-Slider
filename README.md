@@ -1,10 +1,10 @@
-Flip-Slider
+3D Flip-Slider
 ===========
 
 ![Alt text](http://oi58.tinypic.com/wcbwnb.jpg)
 
 ### Features
-- Stylish Flip Animation
+- Stylish 3D Flip Animation
 - Pure JavaScript, no jQuery or any other JS library used
 - Very light file size. (2.5 kb uncompressed version JS)
 - Supports Images as well as HTML contents
@@ -15,7 +15,7 @@ Flip-Slider
 ####Version 1.0.2
 https://github.com/ashishanexpert/Flip-Slider/
 
-####How to Create Instances of the Slider
+####How to Create Instances of the 3D Slider
 <pre><code>var flip1 = new FlipSlider({
     container: document.querySelector(".flip-slider")
 });
