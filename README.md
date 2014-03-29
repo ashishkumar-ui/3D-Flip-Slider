@@ -13,3 +13,13 @@ Flip-Slider
 
 ###### Version 1.0.2
 https://github.com/ashishanexpert/Flip-Slider/
+
+######How to Create Instances of the Slider
+<pre><code>var flip1 = new FlipSlider({
+    container: document.querySelector(".flip-slider")
+});
+
+var flip2 = new FlipSlider({
+    container: document.getElementById("#flipSlider2")
+});
+</code></pre>
