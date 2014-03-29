@@ -47,6 +47,8 @@ body{
 }
 
 .flip-frame .slide{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	height: 300px;
 	position: absolute;
 	top: 0;
@@ -83,4 +85,9 @@ body{
 .nav button{
 	cursor: pointer;
 	width: 80px;
+}
+
+.green{
+	padding: 50px;
+	background: rgb(67, 253, 194);
 }
