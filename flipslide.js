@@ -10,13 +10,15 @@ Website: http://AshishKumar.asia
 function FlipSlider(options) {
     // Private Vars
     var container = options.container,
+        startSlideIndex = options.startIndex || 0,
         slider = container.querySelector(".flip"),
         slides = slider.querySelectorAll(".slide"),
         nextBtn = container.querySelector(".next"),
         PrevBtn = container.querySelector(".prev"),
         timeout,
         frontSlide,
-        backSlide;
+        backSlide,
+        _self = this;
 
     // == public functions == //
 
@@ -89,12 +91,22 @@ function FlipSlider(options) {
         return target;
     }
 
-    // Event Bindings
-    nextBtn.onclick = this.nextFlip;
-    PrevBtn.onclick = this.prevFlip;
+    // Init
+    function init() {
+        // Setting First Slide
+        startSlideIndex = startSlideIndex >= slides.length ? 0 : startSlideIndex;
+        slides[startSlideIndex].classList.add("front");
+
+        // Event Bindings
+        nextBtn.onclick = _self.nextFlip;
+        PrevBtn.onclick = _self.prevFlip;
+    }
+
+    init();
 }
 
 // Creating Instance of the slider
 var flip1 = new FlipSlider({
+    startIndex: 1,
     container: document.querySelector(".flip-slider")
 });
