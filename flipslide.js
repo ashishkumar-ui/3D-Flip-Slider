@@ -17,8 +17,7 @@ function FlipSlider(options) {
         PrevBtn = container.querySelector(".prev"),
         timeout,
         frontSlide,
-        backSlide,
-        _self = this;
+        backSlide;
 
     // == public functions == //
 
@@ -92,17 +91,15 @@ function FlipSlider(options) {
     }
 
     // Init
-    function init() {
+    (function(instance) {
         // Setting First Slide
         startSlideIndex = startSlideIndex >= slides.length ? 0 : startSlideIndex;
         slides[startSlideIndex].classList.add("front");
 
         // Event Bindings
-        nextBtn.onclick = _self.nextFlip;
-        PrevBtn.onclick = _self.prevFlip;
-    }
-
-    init();
+        nextBtn.onclick = instance.nextFlip;
+        PrevBtn.onclick = instance.prevFlip;
+    })(this);
 }
 
 // Creating Instance of the slider
