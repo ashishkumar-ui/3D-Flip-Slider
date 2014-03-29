@@ -4,7 +4,9 @@
 Date : March 29, 2014
 
 ######Release Note:
+- Start Slide Index Option added
 - JsHint Issues Fixes
+- New Branch + Release
 
 ###Version 1.0.1
 Date : March 25, 2014

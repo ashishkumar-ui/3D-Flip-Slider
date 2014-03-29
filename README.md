@@ -11,12 +11,14 @@
 - Highly Customizable
 - Readable CSS and JS, well commented so that you can make your changes as per your requirements
 - Easy to trigger Events from outside elements
+- Set start slide index as per your choice
 
 ####Version 1.0.2
 https://github.com/ashishanexpert/Flip-Slider/
 
 ####How to Create Instances of the 3D Slider
 <pre><code>var flip1 = new FlipSlider({
+	startIndex: 3,
     container: document.querySelector(".flip-slider")
 });
 
