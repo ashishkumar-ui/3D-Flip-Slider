@@ -1,4 +1,4 @@
-#Flip Slider Release Note:
+#3D Flip Slider Release Note:
 
 ###Version 1.0.2
 Date : March 29, 2014
