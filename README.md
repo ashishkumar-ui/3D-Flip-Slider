@@ -1,10 +1,12 @@
 Flip-Slider
 ===========
 
-- Flip Animation Slider Plugin
-- with CSS 3 and Pure JavaScript (no js library used)
+- Stylish Flip Animation
+- Pure JavaScript, no jQuery or any other JS library used
+- Very light file size. (3kb uncompressed version JS)
 - Supports Images as well as HTML contents
-- Highly customizable
+- Highly Customizable
+- Readable CSS and JS, well commented so that you can make your changes as per your requirements
 
-###### Version 1.0.1
+###### Version 1.0.2
 https://github.com/ashishanexpert/Flip-Slider/
