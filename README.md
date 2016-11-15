@@ -3,9 +3,6 @@
 
 ![Alt text](http://oi58.tinypic.com/wcbwnb.jpg)
 
-#Flip Slider.
-##Pure JS slider
-
 ### Features
 - Stylish 3D Flip Animation
 - Pure JavaScript, no jQuery or any other JS library used
