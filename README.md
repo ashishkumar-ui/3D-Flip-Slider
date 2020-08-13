@@ -13,7 +13,10 @@
 - Easy to trigger Events from outside elements
 - Set start slide index as per your choice
 
-####Version 1.0.2
+### Demo URL
+http://ashishkumar-ui.github.io/3D-Flip-Slider/
+
+#### Version 1.0.2
 https://github.com/ashishanexpert/Flip-Slider/
 
 ####How to Create Instances of the 3D Slider
@@ -27,8 +30,8 @@ var flip2 = new FlipSlider({
 });
 </code></pre>
 
-####How to trigger Events from Outside Elements
-######Method 1: Bind Event on Elements
+#### How to trigger Events from Outside Elements
+###### Method 1: Bind Event on Elements
 <pre><code>// Binding Previous Event
 document.querySelector("#flipPrevious").onclick = flip1.prevFlip;
 
@@ -36,12 +39,12 @@ document.querySelector("#flipPrevious").onclick = flip1.prevFlip;
 document.querySelector("#flipNext").onclick = flip1.nextFlip;
 </pre></code>
 
-######Method 2: Trigger somewhere from script
+###### Method 2: Trigger somewhere from script
 <pre><code>flip1.prevFlip(); // Trigger Previous Event
 flip1.nextFlip(); // Trigger Next Event
 </pre></code>
 
-######Method 3: Bind Events inline to the elements
+###### Method 3: Bind Events inline to the elements
 <pre><code>&lt;p>&lt;b onclick="flip1.prevFlip();">Click here&lt;/b> to flip Previous the slider&lt;/p>
 &lt;p>&lt;b onclick="flip1.nextFlip();">Click here&lt;/b> to flip next the slider&lt;/p>
 </pre></code>
